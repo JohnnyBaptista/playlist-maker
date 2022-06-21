@@ -13,7 +13,7 @@ routes.post("/register", async (req, res) => {
 
   try {
     const response = await newUser.save();
-    res.send({ response, newUser });
+    res.send({ response });
   } catch (error) {
     console.error(error);
   }
